@@ -72,10 +72,7 @@ nav a:hover{
     backdrop-filter: var(100px) ;
     
 }
-.Sidebar li:first-child{
-    padding-right: 2rem;
 
-}
 .menu-button{
     display: none;
 }
@@ -88,16 +85,15 @@ nav a:hover{
     }
 }
 @media(max-width: 600px){
-    .Sidebar{
-        width: 80%;
-        margin-top:3rem ;
+    .Sidebar {
+        width: 60%;
         position: fixed;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        font-size: 18px;
+        font-size:bold;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        background-color: rgba(0, 0, 255, 0.128);
+        background-color: rgba(0, 0, 0, 0);   
     }
 }
 
