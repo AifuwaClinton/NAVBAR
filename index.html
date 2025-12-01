@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="Sidebar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+
+            <li onclick= closeSidebar()>
+                <a href="#">
+                    <img src="x.svg" alt="" width="40rem">
+                </a>
+            </li>
+            
+            
+        </ul>
+        <ul>
+            <li><a href="#">EdgeNav</a></li>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Projects</a></li>
+            <li class="hideOnMobile"><a href="#">Contact</a></li>
+            <li onclick= showSidebar()><a href="#"><img src="menu (2).svg" alt="" width="25rem" ></a></li>
+           
+            
+        </ul>
+    </nav>
+
+    
+</body>
+<script>
+    function showSidebar() {
+        const sidebar = document.querySelector(`.Sidebar`)
+        sidebar.style.display = `flex`
+    }
+
+    function closeSidebar() {
+        const sidebar = document.querySelector(`.Sidebar`)
+        sidebar.style.display = `none`
+    }
+</script>
+</html>

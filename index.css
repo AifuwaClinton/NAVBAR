@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(laptop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+     
+     
+   }  
+
+ nav ul{
+   display: flex;
+   gap: 4rem;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+   box-shadow: 0px 10px 5px black;
+   padding: 0.5rem;
+   background-color: rgba(100, 148, 237, 0.071);
+   
+   
+   
+}
+
+nav  a{
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    padding-left: 1rem;
+    
+   
+} 
+nav li:last-child{
+    margin-left: auto;
+     padding-right: 1rem;
+
+   
+} 
+nav a:hover{
+    background-color: rgba(179, 59, 12, 0.537);
+}
+
+.Sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100vh;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(250, 235, 215, 0.062);
+    backdrop-filter: var(100px) ;
+    
+}
+.Sidebar li:first-child{
+    padding-right: 2rem;
+
+}
+.menu-button{
+    display: none;
+}
+@media(max-width: 900px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 600px){
+    .Sidebar{
+        width: 80%;
+        margin-top:3rem ;
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 18px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: rgba(0, 0, 255, 0);
+    }
+}
+
