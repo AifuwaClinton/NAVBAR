@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     min-height: 100vh;
     background-image: url(laptop.jpg);
     background-position: center;
@@ -11,53 +11,57 @@ body{
     background-size: cover;
 }
 
-nav{
+nav {
     width: 100%;
     margin: 0;
     padding: 0;
-    
-     
-     
-   }  
 
- nav ul{
-   display: flex;
-   gap: 4rem;
-   justify-content: center;
-   align-items: center;
-   list-style: none;
-   box-shadow: 0px 3px 10px black;
-   padding: 0.5rem;
-   background-color: rgba(100, 148, 237, 0.071);
-   
-   
-   
+
+
 }
 
-nav  a{
+nav ul {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    box-shadow: 0px 3px 10px black;
+    padding: 0.5rem;
+    background-color: rgba(100, 148, 237, 0.071);
+
+
+
+}
+
+nav a {
     text-decoration: none;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
 }
 
-nav li:first-child{
+nav li:first-child {
     margin-right: auto;
     padding-left: 1rem;
+    font-weight: bold;
     
-   
-} 
-nav li:last-child{
-    margin-left: auto;
-     padding-right: 1rem;
-
-   
-} 
-nav a:hover{
-    background-color: rgba(179, 59, 12, 0.537);
 }
 
-.Sidebar{
+
+
+nav li:last-child {
+    margin-left: auto;
+    padding-right: 1rem;
+
+
+}
+
+nav a:hover {
+    background-color: rgba(179, 59, 12, 0.226);
+}
+
+.Sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -65,35 +69,52 @@ nav a:hover{
     height: 100vh;
     z-index: 999;
     display: none;
+    gap: 1.3rem;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: rgba(250, 235, 215, 0.062);
-    backdrop-filter: var(100px) ;
+    background-color:rgba(0, 0, 255, 0);
+    backdrop-filter: blur(10px); 
+    box-shadow: 0px 15px 10px black;
+}
+ .Sidebar li:nth-child(1) {
+    padding: 0;
     
 }
 
-.menu-button{
+
+
+.menu-button {
     display: none;
 }
-@media(max-width: 900px){
-    .hideOnMobile{
+
+@media(max-width: 900px) {
+    .hideOnMobile {
         display: none;
     }
-    .menu-button{
+
+    .menu-button {
         display: block;
     }
 }
-@media(max-width: 600px){
+
+@media(max-width: 600px) {
     .Sidebar {
-        width: 60%;
+        width: 100%;
         position: fixed;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        font-size:bold;
+        font-weight: 800;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        background-color: rgba(0, 0, 0, 0);   
+        background-color:rgba(9, 32, 52, 0.205);
     }
+    .Sidebar li{
+        padding-left: 1rem;
+    }
+    .Sidebar li:first-child{
+        padding-left: 1rem;
+        font-weight: bolder;
+    }
+   
 }
-
